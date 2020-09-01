@@ -7,17 +7,19 @@ import java.util.ArrayList;
 
 public class AirportController {
 
-
+    //arraylists
     private ArrayList<Airport> airportList = new ArrayList<>();
     private ArrayList<String> destinations = new ArrayList<>();
 
+    //Constructor
     public AirportController(){
         createListOfAirports();
         getdestinationList();
         System.out.println(destinations);
     }
 
-    public void createListOfAirports(){ // creates a list of airports
+    // creates a list of airports
+    public void createListOfAirports(){
         Airport skelleftea = new Airport("Skellefteå SFT");
         skelleftea.getAirportName();
         Airport arlanda = new Airport("Arlanda ARL");
@@ -31,13 +33,13 @@ public class AirportController {
     }
 
 
-
+    //create destinations
     public void createDestinations(Airport airportFrom,Airport airportTo ,int gate){
         String fromAirport = airportFrom.getAirportName();
         String toAirport = airportTo.getAirportName();
         destinations.add("from: "+fromAirport+" to: "+toAirport +" Gate: "+gate);
     }
-
+    //getters and setters
     public ArrayList<Airport> getAirportList() { // returns list of airports
         return airportList;
     }
