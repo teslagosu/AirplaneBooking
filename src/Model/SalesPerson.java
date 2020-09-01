@@ -1,17 +1,20 @@
 package Model;
 
 public class SalesPerson {
+    //variables
     private static int id;
     private String name;
     private String rank;
     private final int salesPersonId;
 
+    //constructor creating a Sales Person
     public SalesPerson(int id, String name, String rank){
         salesPersonId = id++;
         this.setName(name);
         this.setRank(rank);
     }
 
+    //Getters and setters for the variables
     public static int getId() {
         return id;
     }

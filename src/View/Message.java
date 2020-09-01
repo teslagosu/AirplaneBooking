@@ -6,7 +6,7 @@ public class Message {
 
     }
 
-    private void print(String msg){
+    private void print(String msg){ //print function for easier handling of print messages.
         System.out.println(msg);
     }
     /*
