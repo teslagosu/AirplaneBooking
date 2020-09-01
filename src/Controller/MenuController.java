@@ -6,12 +6,15 @@ import View.Message;
 import java.util.Scanner;
 
 public class MenuController {
+    //variables
     Message msg;
     boolean running;
+    //constructor
     public MenuController(){
        this.msg = new Message();
        this.running = true;
     }
+
     public void runMenu(){
         while(running){
 
@@ -24,6 +27,7 @@ public class MenuController {
         Scanner input = new Scanner(System.in);
         return input.nextInt();
     }
+
     public void alternatives(int choice){
         switch (choice){
             case 1:
